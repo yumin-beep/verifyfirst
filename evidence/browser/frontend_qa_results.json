@@ -1,0 +1,314 @@
+{
+  "createdAt": "2026-10-09T19:18:10.221Z",
+  "allPass": true,
+  "tests": [
+    {
+      "name": "initial_example_and_labels",
+      "pass": true
+    },
+    {
+      "name": "empty_submit_no_request",
+      "pass": true
+    },
+    {
+      "name": "manual_no_ai_and_dom_injection",
+      "pass": true
+    },
+    {
+      "name": "no_export_before_recording",
+      "pass": true
+    },
+    {
+      "name": "confirmation_requires_independent_source",
+      "pass": true
+    },
+    {
+      "name": "manual_note_saved",
+      "pass": true,
+      "title": "1 verification note recorded",
+      "exportDisabled": false,
+      "active": {
+        "tag": "BUTTON",
+        "id": "",
+        "class": "button check-save"
+      }
+    },
+    {
+      "name": "manual_keyboard_focus_preserved",
+      "pass": true,
+      "active": {
+        "tag": "BUTTON",
+        "id": "",
+        "class": "button check-save"
+      }
+    },
+    {
+      "name": "download_excludes_message_quotes_and_client_ids",
+      "pass": true,
+      "exportedKeys": [
+        "tool",
+        "version",
+        "created_at",
+        "mode",
+        "model",
+        "checks",
+        "meaning"
+      ],
+      "checkKeys": [
+        "id",
+        "title",
+        "state",
+        "source_type"
+      ]
+    },
+    {
+      "name": "editing_clears_prior_results",
+      "pass": true
+    },
+    {
+      "name": "late_manual_response_ignored_after_clear",
+      "pass": true
+    },
+    {
+      "name": "late_ai_response_ignored_after_clear",
+      "pass": true
+    },
+    {
+      "name": "ai_fixture_quotes_and_labels_remain_plain_text",
+      "pass": true
+    },
+    {
+      "name": "global_save_lock_prevents_concurrent_checks",
+      "pass": true,
+      "checkRequests": 1
+    },
+    {
+      "name": "save_preserves_other_unsaved_inputs",
+      "pass": true,
+      "source": "official_site",
+      "result": "contradicted",
+      "feedback": "Changes not recorded yet.",
+      "active": {
+        "tag": "BUTTON",
+        "id": "",
+        "class": "button check-save"
+      }
+    },
+    {
+      "name": "async_save_keyboard_focus_preserved",
+      "pass": true,
+      "active": {
+        "tag": "BUTTON",
+        "id": "",
+        "class": "button check-save"
+      }
+    },
+    {
+      "name": "sequential_saves_keep_both_notes",
+      "pass": true
+    },
+    {
+      "name": "save_does_not_steal_focus_after_user_moves",
+      "pass": true
+    },
+    {
+      "name": "old_check_response_cannot_overwrite_new_manual_view",
+      "pass": true
+    },
+    {
+      "name": "mobile_390_no_overflow_and_labels",
+      "pass": true,
+      "viewport": 390,
+      "scroll": 390,
+      "body": 390,
+      "unlabelled": [],
+      "interactive": [
+        {
+          "id": "clear",
+          "left": 288.765625,
+          "right": 375
+        },
+        {
+          "id": "example",
+          "left": 36,
+          "right": 354
+        },
+        {
+          "id": "message",
+          "left": 36,
+          "right": 354
+        },
+        {
+          "id": "analyze",
+          "left": 36,
+          "right": 354
+        },
+        {
+          "id": "manual",
+          "left": 36,
+          "right": 354
+        },
+        {
+          "id": "source-0",
+          "left": 65,
+          "right": 354
+        },
+        {
+          "id": "result-0",
+          "left": 65,
+          "right": 354
+        },
+        {
+          "id": "",
+          "left": 65,
+          "right": 189.9375
+        },
+        {
+          "id": "source-1",
+          "left": 65,
+          "right": 354
+        },
+        {
+          "id": "result-1",
+          "left": 65,
+          "right": 354
+        },
+        {
+          "id": "",
+          "left": 65,
+          "right": 189.9375
+        },
+        {
+          "id": "source-2",
+          "left": 65,
+          "right": 354
+        },
+        {
+          "id": "result-2",
+          "left": 65,
+          "right": 354
+        },
+        {
+          "id": "",
+          "left": 65,
+          "right": 189.9375
+        },
+        {
+          "id": "export",
+          "left": 58,
+          "right": 204.4375
+        }
+      ],
+      "skipLink": true,
+      "lang": "en",
+      "statusRegion": "polite"
+    },
+    {
+      "name": "mobile_320_no_overflow_and_labels",
+      "pass": true,
+      "viewport": 320,
+      "scroll": 320,
+      "body": 320,
+      "unlabelled": [],
+      "interactive": [
+        {
+          "id": "clear",
+          "left": 218.765625,
+          "right": 305
+        },
+        {
+          "id": "example",
+          "left": 36,
+          "right": 284
+        },
+        {
+          "id": "message",
+          "left": 36,
+          "right": 284
+        },
+        {
+          "id": "analyze",
+          "left": 36,
+          "right": 284
+        },
+        {
+          "id": "manual",
+          "left": 36,
+          "right": 284
+        },
+        {
+          "id": "source-0",
+          "left": 65,
+          "right": 284
+        },
+        {
+          "id": "result-0",
+          "left": 65,
+          "right": 284
+        },
+        {
+          "id": "",
+          "left": 65,
+          "right": 189.9375
+        },
+        {
+          "id": "source-1",
+          "left": 65,
+          "right": 284
+        },
+        {
+          "id": "result-1",
+          "left": 65,
+          "right": 284
+        },
+        {
+          "id": "",
+          "left": 65,
+          "right": 189.9375
+        },
+        {
+          "id": "source-2",
+          "left": 65,
+          "right": 284
+        },
+        {
+          "id": "result-2",
+          "left": 65,
+          "right": 284
+        },
+        {
+          "id": "",
+          "left": 65,
+          "right": 189.9375
+        },
+        {
+          "id": "export",
+          "left": 58,
+          "right": 204.4375
+        }
+      ],
+      "skipLink": true,
+      "lang": "en",
+      "statusRegion": "polite"
+    },
+    {
+      "name": "no_dom_runtime_errors_or_external_requests",
+      "pass": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "unexpectedNetwork": []
+    }
+  ],
+  "sourceHashes": {
+    "app.js": "f8a206cac7accf791ea392fa18ba94049c4153d099dc954d1ad72e604ecd7896",
+    "index.html": "04807836da635d7eba35ec31d8dc6a9bf90a2ff39b4df2611d5b1fad818a11d7",
+    "style.css": "5424d722bb7735bdc08d490ebddf16effcf61460e6660d6b481dd982b8d9e900"
+  },
+  "aiRequestsActuallySent": 0,
+  "fixtureAnalyzeCount": 2,
+  "fixtureCheckCount": 4,
+  "pageErrors": [],
+  "consoleErrors": [],
+  "unexpectedNetwork": [],
+  "scope": "UI/manual + intercepted synthetic AI/check fixtures only; no model invocation"
+}

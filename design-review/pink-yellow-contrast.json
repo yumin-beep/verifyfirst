@@ -1,0 +1,52 @@
+{
+  "palette": [
+    "#D7355C",
+    "#F9D89C"
+  ],
+  "style_sha256": "48deafc4ed35ab2067072e1ed5d85c0c2452f37ba168ef4d14490c3a4ee1208d",
+  "contrast_pairs": [
+    {
+      "use": "Primary button",
+      "foreground": "#FFFFFF",
+      "background": "#D7355C",
+      "ratio": 4.612
+    },
+    {
+      "use": "Small action text on inspector",
+      "foreground": "#B02548",
+      "background": "#FFF4DF",
+      "ratio": 6.01
+    },
+    {
+      "use": "Small action text on paper",
+      "foreground": "#B02548",
+      "background": "#FFFEFB",
+      "ratio": 6.498
+    },
+    {
+      "use": "Selected quote",
+      "foreground": "#31232A",
+      "background": "#F9D89C",
+      "ratio": 10.916
+    },
+    {
+      "use": "Header secondary text",
+      "foreground": "#725B60",
+      "background": "#F9D89C",
+      "ratio": 4.535
+    },
+    {
+      "use": "Body secondary text",
+      "foreground": "#725B60",
+      "background": "#FFFEFB",
+      "ratio": 6.159
+    },
+    {
+      "use": "Control boundary",
+      "foreground": "#987477",
+      "background": "#FFFEFB",
+      "ratio": 4.083
+    }
+  ],
+  "scope": "CSS-only appearance update. Source-first layout, DOM and application logic unchanged."
+}

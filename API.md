@@ -1,0 +1,13 @@
+# VerifyFirst local API
+
+Final shared contract, 2026-10-10. Loopback port 8795. All text is ephemeral; no account, remote publication or URL fetching.
+
+- `GET /api/health`: `{ok:true,model:string,model_available:boolean,max_text:2400}`. Availability checks installed model metadata, not a generation.
+- `POST /api/analyze`: `{text:string,client_id:string,revision:integer}`. The browser creates a random client ID (16–80 letters/digits/underscore/hyphen) and increases revision for each new analysis/reset. Text 1–2400 characters. Response `{analysis:{id,text,claims,requests,channels,checks,notices},model:{name,elapsed_ms}}`. Each evidence item `{id,kind,label,quote,start,end}`; `start/end` are **UTF-16 code-unit offsets** suitable for JS slice. Only exact, unique, bounded source quotations survive validation. Claims/requests/channels each contain <=6 items. Model types are allowlisted. No model-generated advice is used.
+- Each check: `{id,title,why,state:'pending',source_type:null}`. Labels/advice are fixed by domain logic and selected according to extracted request types. States describe a user's own verification notes; they never mean the app authenticated someone.
+- `POST /api/check`: `{analysis_id,client_id,revision,check_id,state,source_type}`. State: `pending|confirmed|contradicted|unclear`. Source: `known_contact|official_site|in_person|none`. `confirmed` requires a non-none independent source; body `source_type:null` is also accepted only for pending. Returns `{analysis:...}`. Wrong analysis/client/revision or expired analysis returns 409, never another session's text.
+- `POST /api/reset`: `{client_id,revision}`. Higher revision invalidates earlier analysis and in-flight responses, returns `{ok:true}`. Frontend also rejects stale responses with its own request epoch. New analysis must have a higher revision than reset.
+- `GET /api/manual`: `{checks:[...],notices:[...]}`. Fixed checklist, no AI request or backend state. Manual check state stays in browser memory.
+- Errors `{error:{code,message},manual_available:true}` (400/403/409/413/422/429/503). Failed AI does not silently turn into synthetic AI output.
+
+Memory sessions expire after 20 minutes and are swept in the server; no persistence. Input log output is disabled. Single concurrent model generation; separate health and UI requests continue. Requests require exact local Host and same-origin Origin when supplied; POST requires application/json and X-VerifyFirst: 1. Static files are allowlisted, excluding source and evidence. Model endpoint fixed to 127.0.0.1:11434, proxy disabled, redirects rejected, model must be installed and non-cloud. Evidence quotes identify what a message says, not whether its claim is true.

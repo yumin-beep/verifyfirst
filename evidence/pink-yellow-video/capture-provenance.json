@@ -1,0 +1,79 @@
+{
+  "created_at_utc": "2026-10-10T14:07:26.060760+00:00",
+  "theme": [
+    "#D7355C",
+    "#F9D89C"
+  ],
+  "source_hashes": {
+    "index.html": "d0bbdae6b3e368db8501c9adc46d76a2e443c3273e67db7f2db7c0881209dbea",
+    "style.css": "48deafc4ed35ab2067072e1ed5d85c0c2452f37ba168ef4d14490c3a4ee1208d",
+    "app.js": "2361a84713c8dcebbf06e8f65b500d1c2d3d5b967bde3767b5466c48c25ed4ac"
+  },
+  "capture_method": "Actual Codex browser UI screenshots, edited later as a sequence of full and cropped shots. No mocked server responses or image recolouring.",
+  "synthetic_data": true,
+  "real_independent_verification": false,
+  "console_warnings_and_errors": [],
+  "screenshots": [
+    {
+      "file": "01-input.jpg",
+      "sha256": "36849f0814468324bf5bc27d8cedede35a3804ff22d2165debf970d1f6997254",
+      "observed": "Actual pink/yellow app, synthetic payroll example before analysis."
+    },
+    {
+      "file": "02-analysis.jpg",
+      "sha256": "9991ba6ee8afacefc794d87efb5b1f2d52de264f952fcefacd92a28be75629df",
+      "observed": "Actual local model response with five source quotations; link request selected."
+    },
+    {
+      "file": "03-identity.jpg",
+      "sha256": "3288c3c8c222b46eaaafd1434ff04423be6329360e1a35eeaf856ba1b7795924",
+      "observed": "Actual click of the claimed-identity phrase and associated check."
+    },
+    {
+      "file": "04-request.jpg",
+      "sha256": "0dae7d7e7f8fc0446325e25348095d38c04ec61c458c8cc66f7dd8ea50c134fb",
+      "observed": "Actual click of the password/code request and fixed guidance."
+    },
+    {
+      "file": "05-check-form.jpg",
+      "sha256": "f2623da5c76ea5b9918c162eb90d86f2fcef34ed3189d158ad88a43af250fae1",
+      "observed": "Record form opened; no independent source selected; confirmed and contradicted disabled."
+    },
+    {
+      "file": "06-source-required.jpg",
+      "sha256": "b2f27d924352e1a1ca0c3da624088d71e605155bc75c3c77364a78ebcf6965d4",
+      "observed": "Actual Save click rejected with required-source message; no record saved."
+    },
+    {
+      "file": "12-before-save-none-unclear.jpg",
+      "sha256": "b4c384a557e506d71a190dffd2b30428736148ac8ad39108d444c4210d65eb40",
+      "observed": "No independent source and unclear selected, not yet saved."
+    },
+    {
+      "file": "13-after-save-none-unclear.jpg",
+      "sha256": "31af93f508374d6ea857306b636ccd54047f211eeba4fa69910f4f5c76196ff4",
+      "observed": "Actual successful save of none + unclear; observation only, no identity verification."
+    },
+    {
+      "file": "08-record.jpg",
+      "sha256": "fda9323bcec4fa9973f0db3cbfb03f0ccabbd9eb70b040976f4e0bc398072ab3",
+      "observed": "Actual record: one unclear and four pending, zero confirmed or contradicted."
+    },
+    {
+      "file": "09-export-request.jpg",
+      "sha256": "bb180820ce8f01214681cf22261f653695a5fc401ef94ed2e6232ec347d2c4c5",
+      "observed": "Actual export requested message; original message and quotes excluded. File receipt on disk not verified."
+    },
+    {
+      "file": "10-manual.jpg",
+      "sha256": "64845d6398c401dcbda14b02963e01888fa1ca944b8f0a895c1801d47e6dfc32",
+      "observed": "Actual explicit manual mode, three fixed checks, prior AI result and record reset."
+    },
+    {
+      "file": "11-clear.jpg",
+      "sha256": "020976b4ec123ec72e687b2af4a13a3cdf928a7590b6662dae81724a1466005f",
+      "observed": "Actual Clear session; input empty and record count zero."
+    }
+  ],
+  "narration": "Existing local Supertonic F1 English scene audio reused without regeneration. AI voice disclosed in video."
+}

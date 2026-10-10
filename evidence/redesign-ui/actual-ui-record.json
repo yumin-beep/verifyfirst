@@ -1,0 +1,86 @@
+{
+  "recorded_at": "2026-10-10T12:55:27.831042+00:00",
+  "source_files": {
+    "index.html": "d0bbdae6b3e368db8501c9adc46d76a2e443c3273e67db7f2db7c0881209dbea",
+    "style.css": "835e13aafcdc5a0c96e11f44d6537227f10efae1fe091f1867846eb6aa4e47af",
+    "app.js": "2361a84713c8dcebbf06e8f65b500d1c2d3d5b967bde3767b5466c48c25ed4ac"
+  },
+  "capture_method": "Actual Codex in-app browser screenshots via cua_repl; no mock API or response interception. Video is an edited screen sequence, not a continuous recording.",
+  "test_data": "Synthetic payroll example with reserved .invalid domain. No actual banking data or contact verification.",
+  "screenshots": [
+    {
+      "file": "01-input.jpg",
+      "sha256": "948e8a9243ec156dffc0d5ddbdb0ac5cafbd3b050e6eb25b6e10399a1005eaab",
+      "observation": "Synthetic payroll message in new source-first app."
+    },
+    {
+      "file": "02-analysis.jpg",
+      "sha256": "df7aa3558f9db3531863654f160935692f20c15c7250a5186995e1a0b1307f0e",
+      "observation": "Actual local Gemma extraction; five evidence items/checks, link selected."
+    },
+    {
+      "file": "03-identity.jpg",
+      "sha256": "18ca4b80f6148ddac204dba349459459b9744a894449b3ed90521a5142924a21",
+      "observation": "Clicking exact identity quote selects its corresponding check."
+    },
+    {
+      "file": "04-request.jpg",
+      "sha256": "c50bead2d6de4eea38cb6262bfe0fc466231d1fbc2b8371be3582481bcddacd1",
+      "observation": "Clicking password/code request selects corresponding fixed review guidance."
+    },
+    {
+      "file": "05-check-form.jpg",
+      "sha256": "baf8c1c2789817a821f60112ba31eef7a3f8583b2f2a55e591a1260873bf211e",
+      "observation": "Expanded record form; confirmation/contradiction disabled without an independent source."
+    },
+    {
+      "file": "06-source-required.jpg",
+      "sha256": "1ffba29dd43824f50e83bf14757ddab7226c0fdc7ecb335f4a9d86968f38a81d",
+      "observation": "Saving without a source displays required-source validation; no record is saved."
+    },
+    {
+      "file": "07-saved-note.jpg",
+      "sha256": "1a8f084b8a686af18b70a1053611b2fdc047f446e1bfee43fc2840d1bf7fd4e6",
+      "observation": "Actual server save of no independent source plus unclear. Synthetic demonstration, no real independent verification."
+    },
+    {
+      "file": "08-record.jpg",
+      "sha256": "b51aa04c31185940691e3bbfea3fd7b4e7b723332069d4ff2335990f896b5137",
+      "observation": "One recorded check: zero confirmed, zero contradicted, one unclear, four pending."
+    },
+    {
+      "file": "09-export-request.jpg",
+      "sha256": "115c8e5c906726b3e820938e9b0bcd8555b73cc2eaa3a5a759b8a1cbaf88ebb7",
+      "observation": "Export requested by actual UI click; app says original message and source quotes excluded. Download receipt on disk not verified."
+    },
+    {
+      "file": "10-manual.jpg",
+      "sha256": "f3498e2cf290dda263732bf4f0342c738773c8ca5233c7c52f9c0f9496e883ec",
+      "observation": "Explicit manual review shows three fixed checks and no AI call."
+    },
+    {
+      "file": "11-clear.jpg",
+      "sha256": "5f3289b6d739b9c482edc771929e5d46f66644b188f772118222964c5c7f580c",
+      "observation": "Clear session resets the input and record count."
+    },
+    {
+      "file": "qa-mobile-320.jpg",
+      "sha256": "6ead06c4748ae1aded0fa1ae410c226a5b6a6bd3eef59f03169dcc9ec75f269d",
+      "observation": "Responsive 320x812 browser viewport, expanded manual form. Document scrollWidth 305, no horizontal overflow."
+    }
+  ],
+  "additional_observations": [
+    "After selected quote DOM rebuild, keyboard focus remains on its replacement button.",
+    "Save with none + unclear succeeds and collapses form; saved observation remains explicitly unverified.",
+    "Manual form drafts (none + unclear) persist after closing and reopening; unsaved choices are labelled.",
+    "320px viewport reset after responsive QA.",
+    "Browser warnings/errors empty at completion of capture sequence.",
+    "Frontend JavaScript syntax check passed. Backend unchanged; previous 29 backend tests are distinct from these new UI observations."
+  ],
+  "limits": [
+    "No usability study or independent security audit.",
+    "No confirmed source or identity verification performed.",
+    "No export file receipt on disk confirmed.",
+    "Old frontend test evidence does not certify this redesigned UI."
+  ]
+}

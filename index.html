@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light"><title>VerifyFirst — Review a message</title>
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#view-title">Skip to review</a>
+  <header class="topbar">
+    <span class="brand">VerifyFirst</span>
+    <nav class="view-nav" aria-label="Review views"><button id="nav-message" type="button" aria-current="page">Message</button><button id="nav-record" type="button" disabled>Record <span id="nav-count">0</span></button></nav>
+    <span class="top-meta">Private, local workspace</span><button id="clear" class="text-button" type="button">Clear session</button>
+  </header>
+  <main class="workspace">
+    <div class="toolbar"><div><h1 id="view-title" tabindex="-1">Review a message</h1><p id="view-description" class="sub">Find what to check through a source outside the message.</p></div><span id="mode-badge" class="status-badge">Not verified</span></div>
+    <p id="message-status" class="message-status" role="status" aria-live="polite"></p>
+    <section id="message-view" class="reading-grid" aria-label="Message and independent check">
+      <article class="document">
+        <div class="document-head"><h2>Original message</h2><button id="edit-message" class="text-button" type="button" hidden>Edit message</button></div>
+        <div id="editor">
+          <div class="field example-field"><label for="example">Try a fictional message</label><select id="example"><option value="payroll">Payroll update · email</option><option value="family">New number · message</option><option value="account">Account support · message</option><option value="ordinary">Routine update · email</option><option value="korean">Family request · Korean</option></select></div>
+          <div class="field"><div class="field-label"><label for="message">Message text</label><span id="source-label">Synthetic example</span></div><textarea id="message" rows="8" maxlength="2400" spellcheck="false" aria-describedby="message-help counter"></textarea><div class="input-meta"><span id="counter"></span><span id="model-status">Checking local model…</span></div></div>
+          <p id="message-help" class="section-note">Remove passwords, codes and account numbers. Links stay plain text.</p>
+          <div class="actions"><button id="analyze" class="button primary" type="button">Find what to check</button><button id="manual" class="text-button" type="button">Review without AI</button></div>
+        </div>
+        <div id="document-reading" hidden>
+          <div id="source-text" class="document-text" aria-label="Original message with selectable source quotes"></div>
+          <div class="source-bottom"><p id="source-hint" class="section-note">Select an underlined phrase to inspect it.</p><span id="evidence-count" class="small"></span></div>
+          <div id="evidence-browser" class="field" hidden><label for="evidence-select">All extracted phrases</label><select id="evidence-select" aria-describedby="evidence-help"></select><p id="evidence-help" class="section-note">Includes overlapping quotes. Each item links to its exact wording.</p></div>
+          <details id="findings-details" class="details" hidden><summary>About these AI findings</summary><div id="analysis-notices"></div><p id="model-meta" class="model-meta"></p></details>
+        </div>
+      </article>
+      <aside class="inspector" aria-label="Selected phrase and verification check">
+        <div id="inspector-placeholder"><p class="eyebrow">A second look</p><h2>Read it before you act.</h2><p class="sub">Find the claim or request, check through a separate route, then record what you learned.</p><div class="advice"><p class="advice-label">You stay in control</p><p>No links are opened. No one is contacted. The app does not decide whether a message is genuine.</p></div></div>
+        <div id="loading-panel" hidden><div class="loading-indicator"><span class="spinner" aria-hidden="true"></span><p>Reading with the local model…</p></div><p class="section-note">Looking for claims, requests and exact source quotes.</p><button id="cancel" class="button secondary" type="button">Cancel review</button></div>
+        <div id="check-panel" hidden>
+          <div class="check-nav"><label for="check-select">Independent checks</label><span id="check-position"></span></div><select id="check-select"></select>
+          <div id="selected-evidence" class="selected-evidence" hidden><p id="evidence-kind" class="eyebrow"></p><blockquote id="claim-quote"></blockquote></div>
+          <h2 id="check-title" tabindex="-1"></h2><div class="advice"><p class="advice-label">What to check</p><p id="check-advice"></p></div>
+          <p id="no-linked-check" class="section-note" hidden>This phrase has no dedicated checklist item. Choose a check above to record an independent observation.</p>
+          <div id="check-entry" class="actions"><button id="open-check-form" class="button primary" type="button" aria-controls="check-form" aria-expanded="false">Record your check</button><button id="next-check" class="text-button" type="button">Next check →</button></div>
+          <form id="check-form" hidden>
+            <div class="field"><label for="check-source">Independent source</label><select id="check-source" aria-describedby="source-help"><option value="">Choose the source you used</option></select><p id="source-help" class="field-hint"></p></div>
+            <div class="field"><label for="check-outcome">What did you find?</label><select id="check-outcome" aria-describedby="outcome-help"></select><p id="outcome-help" class="field-hint">Confirmation or contradiction needs an independent source.</p></div>
+            <div class="actions"><button id="save-check" class="button primary" type="submit">Save check</button><button id="close-check-form" class="text-button" type="button">Back to the phrase</button></div>
+          </form>
+          <p id="check-save-note" class="save-note" aria-live="polite"></p>
+        </div>
+      </aside>
+    </section>
+    <section id="record-view" class="record-view" aria-label="Your verification record" hidden>
+      <div class="record-heading"><p id="record-description"></p><button id="return-message" class="text-button" type="button">← Back to message</button></div><div id="summary-list" class="summary-list"></div>
+      <div class="actions"><button id="export" class="button primary" type="button" disabled>Download your record</button></div><p class="section-note">The download contains saved check states only. The original message and source quotes are excluded.</p>
+    </section>
+    <details class="privacy details"><summary>Where does my message go?</summary><div><p>AI analysis sends text only to this local Python server and the local Ollama model. Manual review keeps the text in this browser. Neither mode opens message links or contacts anyone.</p><p>There is no account, analytics or message database. Clear session removes this app’s review. Closing the page also requests a reset; if the browser stops abruptly, server memory may remain for about 20 minutes. Neither action guarantees erasure from your browser or model runtime.</p></div></details>
+  </main>
+  <footer><span>VerifyFirst · Local prototype</span><span>Your observations, not an automated safety verdict.</span></footer>
+</body>
+</html>

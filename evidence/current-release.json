@@ -1,0 +1,71 @@
+{
+  "prepared_at_utc": "2026-10-10T14:16:07.851689+00:00",
+  "scope": "Package evidence summary derived from existing recorded checks, not a newly executed test suite.",
+  "current_source_sha256": {
+    "core.py": "89252638287c45134cd2988b3f0b1acfbf4c3cb0e119c30ce9f77efccec748b7",
+    "server.py": "37700f6e53621486dcfcb7f77bc42c6d3be98046c58e2aa9b386461e16d1e0d5",
+    "index.html": "d0bbdae6b3e368db8501c9adc46d76a2e443c3273e67db7f2db7c0881209dbea",
+    "style.css": "48deafc4ed35ab2067072e1ed5d85c0c2452f37ba168ef4d14490c3a4ee1208d",
+    "app.js": "2361a84713c8dcebbf06e8f65b500d1c2d3d5b967bde3767b5466c48c25ed4ac"
+  },
+  "recorded_backend": {
+    "tests": 29,
+    "failures": 0,
+    "errors": 0,
+    "source_hashes_match": true,
+    "http_model": "mocked"
+  },
+  "real_model_evaluation": {
+    "model": "gemma4:e4b-it-qat",
+    "model_digest": "ee665637121887cf3befff38abbb1be4ee117c7db867d97a67e29049ecd7e15f",
+    "summary": {
+      "cases": 10,
+      "successful_responses": 10,
+      "exact_request_sets": 9,
+      "baseline_exact_request_sets": 6,
+      "p50_ms": 783.5,
+      "p95_nearest_rank_ms": 1382
+    },
+    "source_hashes_match": true,
+    "scope": "10 authored synthetic English development examples; not an independent benchmark or user study"
+  },
+  "historical_frontend": {
+    "checks": 21,
+    "passed": true,
+    "actual_model_calls": 0,
+    "source_hashes_match_current": {
+      "app.js": false,
+      "index.html": false,
+      "style.css": false
+    },
+    "scope": "Earlier UI only; not rerun after redesign."
+  },
+  "current_actual_ui": {
+    "evidence": "evidence/pink-yellow-video/capture-provenance.json",
+    "source_hashes_match": true,
+    "capture_count": 12,
+    "synthetic_data": true,
+    "real_independent_verification": false,
+    "export_file_receipt_verified": false,
+    "screenshots_bundled": false
+  },
+  "demo_video": {
+    "SHA256": "1c718fc9f044d4c5c4a12c30169e753ff6b9b4fb1ba44af76345432db3d67c78",
+    "bytes": 14096269,
+    "durationSeconds": 120.33333333333333,
+    "width": 1920,
+    "height": 1080,
+    "fps": 15,
+    "audioTracks": 1,
+    "audioNonSilent": true,
+    "decodedFrames": 1805,
+    "expectedFrameCountMatches": true,
+    "strictlyIncreasingTimestamps": true,
+    "originalCaptureCount": 12,
+    "originalCapturesUnchanged": true,
+    "narrationUnchanged": true,
+    "allNarrationClipsFitScenes": true,
+    "shotCount": 21
+  },
+  "publication": "No publication or submission action was performed by this package-preparation task."
+}
