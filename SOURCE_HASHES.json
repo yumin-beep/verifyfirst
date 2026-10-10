@@ -1,13 +1,13 @@
 {
-  "prepared_at_utc": "2026-10-10T14:18:54.341100+00:00",
+  "prepared_at_utc": "2026-10-10T14:19:47.461061+00:00",
   "release": "VerifyFirst pink-and-yellow source-first UI",
   "source_repository": "https://github.com/yumin-beep/verifyfirst",
   "files": {
     ".gitignore": "e6736ffe6b63e55664546cb3013bf573e48ac5c87c6e74142f218e3c61ab0ba7",
     "LICENSE": "2b4bbea6bec0a4c03f185e9214f6222e9904a84346b440ec3a6c5205f21b023c",
-    "README.md": "9763b7c63260152fd65b711f7525b9ae09e60251eacddadb70e106a173b732c3",
+    "README.md": "81416a710e198e045939fa4c8e51fdc43b85d710fb51932405bace6da7574ad2",
     "API.md": "02c01d19f158a29119e8d7a4ceec65f9264cd5348e628104f670acd39065ae62",
-    "VERIFICATION.md": "bbb51fe56c736b1342a683c75a516de25ccd65275060789b87d30b97344c079a",
+    "VERIFICATION.md": "de005f6095e31d17e1999535a229983410402eea051bfd4f7e77db12ef2530e1",
     "AI_CONTRIBUTION.md": "0b78e624093d7287413af78d38bfb22a4cd4dbb07f0a3ae9f20c04b67f34e453",
     "THIRD_PARTY.md": "1f9e003f88a1b0eb470c088388d73b15e7193c60db832e359a0352d3cfe0f0f2",
     "core.py": "89252638287c45134cd2988b3f0b1acfbf4c3cb0e119c30ce9f77efccec748b7",
