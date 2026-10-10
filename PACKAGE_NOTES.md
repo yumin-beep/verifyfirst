@@ -1,6 +1,6 @@
 # Source release contents
 
-This release contains the current pink-and-yellow source-first interface and its unchanged local Python backend. The source repository is https://github.com/yumin-beep/verifyfirst . Creating this directory does not establish that it has been pushed or that the competition accepted a submission.
+This release contains the current pink-and-yellow source-first interface and its unchanged local Python backend. The source repository is https://github.com/yumin-beep/verifyfirst . The root task confirmed public source commit `2077ca9` and the public English demo at https://youtu.be/xwB8xJeShIw . This does not establish final competition acceptance.
 
 ## Version and evidence boundaries
 

@@ -2,7 +2,7 @@
 
 **Separate what a message claims from what you have independently checked.**
 
-[Source repository](https://github.com/yumin-beep/verifyfirst)
+[Source repository](https://github.com/yumin-beep/verifyfirst) · [Watch the English demo (2:00)](https://youtu.be/xwB8xJeShIw)
 
 VerifyFirst is a local prototype for ForgeHacks 2026's **AI + Cybersecurity** track. Paste a short suspicious or ordinary message. A real local model extracts claimed identities, requested actions and supplied contact routes. The app shows the exact source words, then builds a fixed checklist matched to the requests. You can record what you found through a contact you already knew, an independently located official site, or an in-person conversation.
 

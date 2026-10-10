@@ -1,11 +1,11 @@
 {
-  "prepared_at_utc": "2026-10-10T14:19:47.461061+00:00",
+  "prepared_at_utc": "2026-10-10T14:21:55.272288+00:00",
   "release": "VerifyFirst pink-and-yellow source-first UI",
   "source_repository": "https://github.com/yumin-beep/verifyfirst",
   "files": {
     ".gitignore": "e6736ffe6b63e55664546cb3013bf573e48ac5c87c6e74142f218e3c61ab0ba7",
     "LICENSE": "2b4bbea6bec0a4c03f185e9214f6222e9904a84346b440ec3a6c5205f21b023c",
-    "README.md": "81416a710e198e045939fa4c8e51fdc43b85d710fb51932405bace6da7574ad2",
+    "README.md": "3b976e78c246c7fdbb602cee18c5bc568ad5d0487ddadcbb4e9b3000fa55328b",
     "API.md": "02c01d19f158a29119e8d7a4ceec65f9264cd5348e628104f670acd39065ae62",
     "VERIFICATION.md": "de005f6095e31d17e1999535a229983410402eea051bfd4f7e77db12ef2530e1",
     "AI_CONTRIBUTION.md": "0b78e624093d7287413af78d38bfb22a4cd4dbb07f0a3ae9f20c04b67f34e453",
@@ -21,7 +21,7 @@
     "tests/run_model_evaluation.py": "d44ca9fea405d3a4a86bb44553fa79a1ee21c95158b7e6af61c7b97563985885",
     "evidence/deterministic-tests.json": "eb2e5358b900fac99cbf773138b59740e7f257c0ffda0658a5a7ba96de97c37d",
     "evidence/local-model-evaluation.json": "c1026f904d61a2252baad23140333ebe9cd7de13d4e3d461b1025c87b608100b",
-    "evidence/current-release.json": "d574b36d298e5e9d5b46b8f56a54c879c8784f0b881732d0b2dbeb4d1c306710",
+    "evidence/current-release.json": "60d3af476e8e94c10927832d8962d41a61de01385c249e30eb78aa482ffbdfc3",
     "evidence/browser/frontend_qa_results.json": "c9a8e11860c0470f74200d199111a0ad21fe1bc58da8432a20bedf954036685b",
     "evidence/browser/HISTORICAL.md": "44c65858484745ae0b853356b13b1b651e00cfd0c8f406243568999910ba7265",
     "evidence/redesign-ui/actual-ui-record.json": "49722ddc212acda0e0a63b3e2f75aeea73fb8797fdf040f1e60a41db7cb3b482",
@@ -34,5 +34,7 @@
     "screenshots/message-review.jpg": "evidence/pink-yellow-video/04-request.jpg",
     "screenshots/record.jpg": "evidence/pink-yellow-video/08-record.jpg"
   },
-  "scope": "Relative paths only. File hashes identify this release; they do not assert a public push or submission."
+  "scope": "Relative release paths and public source/video URLs. Source commit 2077ca9 and video publication were confirmed by root; this link-only update still requires its follow-up commit. No final competition acceptance is asserted.",
+  "public_video_url": "https://youtu.be/xwB8xJeShIw",
+  "confirmed_public_commit_before_link_update": "2077ca9"
 }

@@ -65,7 +65,14 @@
     "originalCapturesUnchanged": true,
     "narrationUnchanged": true,
     "allNarrationClipsFitScenes": true,
-    "shotCount": 21
+    "shotCount": 21,
+    "public_url": "https://youtu.be/xwB8xJeShIw"
   },
-  "publication": "No publication or submission action was performed by this package-preparation task."
+  "publication": {
+    "reported_by": "root",
+    "source_repository": "https://github.com/yumin-beep/verifyfirst",
+    "confirmed_public_commit": "2077ca9",
+    "public_video_url": "https://youtu.be/xwB8xJeShIw",
+    "devpost_final_submission": "Not established by this local package update."
+  }
 }
